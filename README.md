@@ -31,7 +31,6 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 
 ## Examples
 
-### Running the Ant gym environment
 1. Collect expert data
 	
     ```python mpnet/data_loader.py```
