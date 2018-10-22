@@ -1,0 +1,21 @@
+
+data_generation
+-Contains C++ code to generate expert demonstrations in 2D and 3D environments
+- Follow the instructions in README file to compile c++ code.
+
+
+MPNet:
+-AE: Autoencoder codes
+-data_loader: loads expert demonstrations for training and testing
+-model: define path generator dataset
+-neuralplanner: Uses neural models to generate paths
+-Train: training code
+MPNet/AE:
+-data_loader: loads obstacles point-cloud
+-CAE: Contractive AutoEncoder
+
+
+
+
+
+

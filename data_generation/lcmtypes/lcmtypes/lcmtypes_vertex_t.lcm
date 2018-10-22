@@ -1,0 +1,6 @@
+package lcmtypes;
+
+struct vertex_t {
+    
+    state_t state;
+}

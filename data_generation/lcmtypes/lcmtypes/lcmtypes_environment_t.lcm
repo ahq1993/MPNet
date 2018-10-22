@@ -1,0 +1,9 @@
+package lcmtypes;
+
+struct environment_t {
+    region_3d_t operating;
+    region_3d_t goal;
+
+    int32_t num_obstacles;
+    region_3d_t obstacles[num_obstacles];
+}

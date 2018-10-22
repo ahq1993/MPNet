@@ -1,0 +1,10 @@
+package lcmtypes;
+
+struct graph_t {
+    
+    int32_t num_vertices;
+    vertex_t vertices[num_vertices];
+
+    int32_t num_edges;
+    edge_t edges[num_edges];
+}

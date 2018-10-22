@@ -1,0 +1,8 @@
+package lcmtypes;
+
+struct edge_t {
+
+    vertex_t vertex_src;
+    vertex_t vertex_dst;
+    trajectory_t trajectory;
+}   

@@ -1,0 +1,6 @@
+package lcmtypes;
+
+struct region_3d_t {
+    double center[3];
+    double size[3];
+}

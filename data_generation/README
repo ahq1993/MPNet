@@ -1,0 +1,14 @@
+To install with libbot2:
+
+1. Check out libbot2 from 
+https://github.com/libbot2/libbot2
+
+2. Make sure all dependencies of libbot2 (e.g., lcm) are installed.
+
+3. Install libbot2 with the local installation procedure.
+
+4. Run "make" in the folder where this README file is located.
+
+
+
+
