@@ -45,7 +45,8 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 
 ## References
 
-```@article{qureshi2018motion,
+```
+  @article{qureshi2018motion,
   title={Motion Planning Networks},
   author={Qureshi, Ahmed H and Bency, Mayur J and Yip, Michael C},
   journal={arXiv preprint arXiv:1806.05767},
