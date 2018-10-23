@@ -10,6 +10,7 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 	* Any existing classical motion planner can be used to generate datasets. However, we provide following implementations in C++:
 		* [P-RRT*](https://link.springer.com/article/10.1007/s10514-015-9518-0)
 		* [RRT*](https://arxiv.org/abs/1105.1186)
+		* Example dataset: [simple2D](https://drive.google.com/open?id=1oADJ85qxb3WKHXE4Bj6lwio-soGOktRa)
 * MPNet algorithm
 
 ## Requirements
@@ -41,3 +42,21 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 3. Run tests
 	
     ```python neuralplanner.py``` 
+
+## References
+
+```@article{qureshi2018motion,
+  title={Motion Planning Networks},
+  author={Qureshi, Ahmed H and Bency, Mayur J and Yip, Michael C},
+  journal={arXiv preprint arXiv:1806.05767},
+  year={2018}
+}
+@article{qureshi2018deeply,
+  title={Deeply Informed Neural Sampling for Robot Motion Planning},
+  author={Qureshi, Ahmed H and Yip, Michael C},
+  journal={arXiv preprint arXiv:1809.10252},
+  year={2018}
+}
+```
+
+
