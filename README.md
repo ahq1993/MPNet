@@ -32,14 +32,11 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 
 ## Examples
 
-1. Collect expert data
-	
-    ```python mpnet/data_loader.py```
-2. Run mpnet_trainer:
+1. Run mpnet_trainer:
 	
     ```python mpnet/train.py```
     
-3. Run tests
+2. Run tests
 	
     ```python neuralplanner.py``` 
 
