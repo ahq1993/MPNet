@@ -32,13 +32,16 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 
 ## Examples
 
-1. Run mpnet_trainer:
+1. Assuming paths to obstacles point-cloud are declared, train obstacle-encoder:
+```python MPNET/AE/CAE.py```
+
+2. Assuming paths to demonstration dataset and obstacle-encoder are declared, run mpnet_trainer:
 	
-    ```python mpnet/train.py```
+    ```python MPNET/train.py```
     
-2. Run tests
+3. Run tests by first loading the trained models:
 	
-    ```python neuralplanner.py``` 
+    ```python MPNET/neuralplanner.py``` 
 
 ## References
 
