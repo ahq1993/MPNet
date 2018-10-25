@@ -281,18 +281,7 @@ int main () {
 					  out.close();
 			*/
 
-		 // p-rrt* path generation
-		double cost=1000;
-		int k=0;
-		int c=0, cp=0;
 
-
-		 /*for (int k = 0; k <1000; k++) {
-
-				rrts.iteration(node,-1,-1);
-
-		 }
-		*/
 		 
 		 // p-rrt* path generation
 		double cost=1000;
