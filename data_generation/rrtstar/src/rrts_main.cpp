@@ -58,7 +58,7 @@ int main () {
 
     srand (time(0));
     
-     //this is how obstacle locations were generated for 80 x 80
+  
     /*
 	//-In order to generate random environments, we randomly sample 20 obstacles locations in the workspace, as follow:
 	//-Orignal workspace is 40X40 but we sample locations from 30X30 space in order to avoid obstacles going out of workspace boundry.
@@ -294,7 +294,7 @@ int main () {
 			while(k<limit)
 			{
 				
-				rrts.iteration(node);
+				rrts.iteration(node,-1,-1);
 			    k++;
 			}
 			vertex_t & vertexBest=rrts.getBestVertex ();
