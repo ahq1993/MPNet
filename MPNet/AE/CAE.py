@@ -72,7 +72,7 @@ def main(args):
 			h = encoder(inp)
 			output = decoder(h)
 			keys=encoder.state_dict().keys()
-			W=encoder.state_dict()[keys[9]]
+			W=encoder.state_dict()['encoder.6.weight'] # regularize or contracting last layer of encoder. Print keys to displace the layers name. 
 			loss = loss_function(W,inp,output,h)
 			avg_loss=avg_loss+loss.data[0]
 			# ===================backward====================
