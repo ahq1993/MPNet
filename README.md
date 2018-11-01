@@ -24,7 +24,11 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 	2. Use any compiler such as Netbeans to load the precomplie code.
 		* data_generation/src/rrts_main.cpp contains the main rrt/prrt code. 	
 		* data_generation/viewer/src/viewer_main.cpp contains the visualization code.
-			* Also checkout comments in data_generation/viewer/src/renderers/graph_renderer.cpp 	
+			* Also checkout comments in data_generation/viewer/src/renderers/graph_renderer.cpp
+
+		* Note: main_viewer and rrts_main should run in parallel as:
+			* rrts_main sends the path solution as well as the tree to the main_viewer to publish through local network.
+			* data is transmitted through LCM network protocol.
 
 * MPNet
 	* [PyTorch](http://pytorch.org/) 
