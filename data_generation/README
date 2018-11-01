@@ -12,9 +12,9 @@ https://github.com/libbot2/libbot2
 5. Once complied, one can use Netbeans C/C++ IDE to load the pre-compiled project.
 
 6- Run viewer for visualization as follow or build&run using netbeans:
-``` g++ viewer/src/main_viewer.cpp ```
+```g++ viewer/src/main_viewer.cpp```
 7- Run rrtstar/prrtstar as follow or build&run using netbeans:
-``` g++ rrtstar/src/rrts_main.cpp ```
+```g++ rrtstar/src/rrts_main.cpp```
 
 #Note: main_viewer and rrts_main should run in parallel as:
 -rrts_main sends the path solution as well as the tree to the main_viewer to publish through local network.
