@@ -93,7 +93,7 @@ int main () {
     
    
    int i=0;
-   for (i=0;i<110;i++){
+   for (i=0;i<1;i++){
     	string env_no;          // string which will contain the result
     	ostringstream convert2;   // stream used for the conversion
     	convert2 << i;      // insert the textual representation of 'Number' in the characters in the stream
@@ -108,7 +108,7 @@ int main () {
 	    ifstream in3(path.c_str(), ios::in | ios::binary);
 	    in3.read((char *) &fnum2, sizeof fnum2);
 	    int t=0;
-  		for (int t=0;t<1;t++){  
+  		for (int t=0;t<100;t++){  
 			cout<<"t"<<t<<endl;  
 			 
 			planner_t rrts;
