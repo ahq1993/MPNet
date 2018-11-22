@@ -189,7 +189,7 @@ static void renderer_graph_draw(BotViewer *viewer, BotRenderer *renderer)
     in2.read((char *) &perm, sizeof perm);                            
 
 
-    int i=8; //env_no
+    int i=0; //env_no
 
 	float color_obstacles[] = { 0.37, 0.3, 0.3,((double)(self->obstacle_opacity))/100.0};
 	glMaterialfv (GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, color_obstacles);
