@@ -51,7 +51,10 @@ int publishTraj (lcm_t *lcm, planner_t& planner, System& system, int num, string
 
 int publishEnvironment(lcm_t *lcm, region& regionOperating, region& regionGoal, list<region*>& obstacles);
 //ofstream out("nodes1", ios::out | ios::binary);
-// double nodes[50000][2];       
+// double nodes[50000][2];
+string env_path="env";
+mkdir(env_path.c_str(),ACCESSPERMS); // create folder with env label to store generated trajectories
+
 int main () {
     
     double nodes[size][2]; // nodes from obstacle-free space that will become random start-goal pairs
