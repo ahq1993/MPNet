@@ -104,7 +104,7 @@ static void renderer_graph_draw(BotViewer *viewer, BotRenderer *renderer)
     glRotatef (0.0, 0.0, 0.0, 1.0);
 
 
-    bot_gl_draw_disk (1.0);
+    bot_gl_draw_disk (0.0);
 
     glPopMatrix ();
             
@@ -252,7 +252,7 @@ static void renderer_graph_draw(BotViewer *viewer, BotRenderer *renderer)
     bot_gl_draw_cube ();
     glPopMatrix ();
 
-    return
+    return;
 } 
 
 
