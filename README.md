@@ -1,7 +1,7 @@
 # Motion Planning Networks
 Implementation of [MPNet: Motion Planning Networks](https://sites.google.com/view/mpnet). [[arXiv]](https://arxiv.org/abs/1806.05767)  
 
-[![MPNet](https://img.youtube.com/vi/3hQzWDLfDxA/0.jpg)](https://www.youtube.com/watch?v=3hQzWDLfDxA)
+
 
 The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/abs/1809.10252).
 
