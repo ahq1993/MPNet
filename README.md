@@ -50,17 +50,27 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 ## References
 
 ```
-@article{qureshi2018motion,
-  title={Motion Planning Networks},
-  author={Qureshi, Ahmed H and Bency, Mayur J and Yip, Michael C},
-  journal={arXiv preprint arXiv:1806.05767},
-  year={2018}
+@inproceedings{qureshi2019motion,
+  title={Motion planning networks},
+  author={Qureshi, Ahmed H and Simeonov, Anthony and Bency, Mayur J and Yip, Michael C},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  pages={2118--2124},
+  year={2019},
+  organization={IEEE}
 }
-@article{qureshi2018deeply,
+@inproceedings{qureshi2018deeply,
   title={Deeply Informed Neural Sampling for Robot Motion Planning},
   author={Qureshi, Ahmed H and Yip, Michael C},
-  journal={arXiv preprint arXiv:1809.10252},
-  year={2018}
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={6582--6588},
+  year={2018},
+  organization={IEEE}
+}
+@article{qureshi2019motion,
+  title={Motion Planning Networks: Bridging the Gap Between Learning-based and Classical Motion Planners},
+  author={Qureshi, Ahmed H and Miao, Yinglong and Simeonov, Anthony and Yip, Michael C},
+  journal={arXiv preprint arXiv:1907.06013},
+  year={2019}
 }
 ```
 
