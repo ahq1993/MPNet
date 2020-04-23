@@ -11,7 +11,28 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 		* [P-RRT*](https://link.springer.com/article/10.1007/s10514-015-9518-0)
 		* [RRT*](https://arxiv.org/abs/1105.1186)
 		* Example dataset: [simple2D](https://drive.google.com/open?id=1oADJ85qxb3WKHXE4Bj6lwio-soGOktRa)
+		* Example dataset: [Complex3D]
 * MPNet algorithm
+* A navie python visualization files
+
+
+## Data Description
+*Simple 2D has 7 blocks each of size 5x5 that are placed randomly.
+*Complex 3D contains 10 blocks with sizes as follow:
+	*shape=[[5.0,5.0,10.0],[5.0,10.0,5.0],[5.0,10.0,10.0],
+              [10.0,5.0,5.0],[10.0,5.0,10.0],[10.0,10.0,5.0],
+              [10.0,10.0,10.0],[5.0,5.0,5.0],[10.0,10.0,10.0],[5.0,5.0,5.0]]
+*e0-109 has the training and testing paths in 110 different environments.
+	*0-100 environments and 0-4000 paths/environment are for training.
+	*Seen test dataset: 0-100 envs and 4000-4200=200 paths/env.
+	*Unseen test dataset: 100-110 envs and 0-2000 paths/env.
+*obs_cloud is the point-cloud of randomly generated 30,000 environments.
+	*0-110 corresponds to the same environments for which path data is provided.
+	*You may use full dataset to train encoder network via unsupervised learning.
+*obs.dat contains the center location (x,y) of each obstacle in the environments.
+*obs_perm2.dat contains the order in which the blocks should be placed in preset locations given by obs.dat file to setup environments.
+For instance, in complex 3D, the permutation 8342567901 indicates obstacle #8 of size 10x10x10 should be placed at the location #0 given by obs.dat.
+
 
 ## Requirements
 * Data Generation
