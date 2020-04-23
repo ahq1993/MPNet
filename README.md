@@ -1,6 +1,5 @@
 # Motion Planning Networks
-Implementation of [MPNet: Motion Planning Networks](https://sites.google.com/view/mpnet). [[arXiv]](https://arxiv.org/abs/1806.05767)  
-
+Implementation of [MPNet: Motion Planning Networks](https://sites.google.com/view/mpnet). [[arXiv1]](https://arxiv.org/abs/1806.05767) [[arXiv2]](https://arxiv.org/abs/1907.06013) 
 
 
 The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/abs/1809.10252).
@@ -11,7 +10,7 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 		* [P-RRT*](https://link.springer.com/article/10.1007/s10514-015-9518-0)
 		* [RRT*](https://arxiv.org/abs/1105.1186)
 		* Example dataset: [simple2D](https://drive.google.com/open?id=1oADJ85qxb3WKHXE4Bj6lwio-soGOktRa)
-		* Example dataset: [Complex3D]
+		* Example dataset: [Complex3D](https://drive.google.com/file/d/1wNPfdVGkkZ-7haTUhdzT0sGnZAkAJEol/view?usp=sharing)
 * MPNet algorithm
 * A navie python visualization files
 
@@ -32,6 +31,14 @@ The code can easily be adapted for [Informed Neural Sampling](https://arxiv.org/
 * obs.dat contains the center location (x,y) of each obstacle in the environments.
 * obs_perm2.dat contains the order in which the blocks should be placed in preset locations given by obs.dat file to setup environments.
 	* For instance, in complex 3D, the permutation 8342567901 indicates obstacle #8 of size 10x10x10 should be placed at the location #0 given by obs.dat.
+
+## Generating your own data
+* Define a region of operation, for instance in simple2D, it is 20x20
+* Decide how many obstacles (r) you would like to place in the region. In the case of simple2D, we have r=7 5x5 blocks.
+* Generate random N locations to place r obstacles in the region. In the case of simple2D, we generated N=20.
+* For N locations and r obstacles, apply combinatorics, to generate NCr different environments i.e., in simple 2D NCr= 20C7= 77520
+ 	* The obs_perm2 file contains the combinations, for instance 6432150 indicates to place obstacle#6 at location #0.
+* Once obstacles are placed, randomly generate collision-free samples and use them in pairs as stat-goal to generate paths using any classical planne for the training. For classical planners, we recommend using [OMPL](https://ompl.kavrakilab.org/) implementations.
 
 
 ## Requirements
